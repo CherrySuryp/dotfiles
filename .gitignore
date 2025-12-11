@@ -1,4 +1,5 @@
 .config/*
 !.config/nvim/
 
-.claude/
+.claude/*
+!.claude/commands
