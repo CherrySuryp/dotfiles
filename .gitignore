@@ -1,5 +1,25 @@
+# How to un-ignore files in an ignored directory:
+# 1. Un-ignore the parent directory (!path/to/dir/)
+# 2. Ignore everything inside it (path/to/dir/*)
+# 3. Un-ignore specific files (!path/to/dir/*.extension)
+
+# ============================================================================
+# CONFIG DIRECTORY
+# ============================================================================
+
 .config/*
+
+# --- Neovim ---
 !.config/nvim/
+
+# --- iTerm2 ---
+!.config/iterm2/
+.config/iterm2/*
+!.config/iterm2/*.itermexport
+
+# ============================================================================
+# CLAUDE DIRECTORY
+# ============================================================================
 
 .claude/*
 !.claude/commands
