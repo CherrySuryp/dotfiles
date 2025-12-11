@@ -25,13 +25,6 @@ return {
         desc = "Toggle horizontal terminal",
         mode = { "n", "t" },
       },
-      -- <C-'> (apostrophe key) to toggle terminal vertically
-      {
-        "<C-'>",
-        "<cmd>ToggleTerm direction=vertical size=80<cr>",
-        desc = "Toggle vertical terminal",
-        mode = { "n", "t" },
-      },
     },
   },
 
