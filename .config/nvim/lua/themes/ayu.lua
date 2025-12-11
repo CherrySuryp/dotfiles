@@ -6,7 +6,17 @@ return {
     require("ayu").setup {
       mirage = true,
       terminal = true,
-      overrides = {},
+      overrides = {
+        TabLine = { bg = "None" },
+        TabLineFill = { bg = "None" },
+        TabLineSel = { bg = "None" },
+        BufferLine = { bg = "None" },
+        BufferLineFill = { bg = "None" },
+        NeoTreeTabInactive = { bg = "None" },
+        NeoTreeTabActive = { bg = "None" },
+        NeoTreeTabSeparatorInactive = { bg = "None" },
+        NeoTreeTabSeparatorActive = { bg = "None" },
+      },
     }
   end,
 }
