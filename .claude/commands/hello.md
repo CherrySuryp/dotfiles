@@ -8,7 +8,7 @@ Please greet me in a friendly way and provide a brief overview of what you can h
 
 ## Best Practices Demonstrated:
 
-1. **Description**: Commands should include a description in HTML comments at the top
+1. **Description**: Commands should include a description.
 2. **Tags**: Optional tags help organize and categorize commands
 3. **Clear Instructions**: The command contains clear, specific instructions
 4. **Structure**: Using markdown for readability (though plain text works too)
