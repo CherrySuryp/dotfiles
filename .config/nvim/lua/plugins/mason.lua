@@ -9,16 +9,13 @@ return {
       ensure_installed = {
         -- install language servers
         "lua-language-server",
-        "pyright",
+        "basedpyright",
         "terraform-ls",
         "gopls",
 
         -- install formatters
         "stylua",
         "ruff",
-
-        -- install type-checkers
-        "mypy",
 
         -- install debuggers
         "debugpy",
