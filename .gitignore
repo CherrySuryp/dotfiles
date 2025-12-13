@@ -9,6 +9,9 @@
 
 .config/*
 
+# --- Zsh ---
+!.config/zsh/
+
 # --- Neovim ---
 !.config/nvim/
 
