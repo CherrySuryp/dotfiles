@@ -20,6 +20,7 @@
 .config/zsh/*
 !.config/zsh/.gitkeep
 !.config/zsh/yazi.zsh
+!.config/zsh/thefuck.zsh
 
 # --- Neovim ---
 !.config/nvim/
