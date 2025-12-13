@@ -21,6 +21,7 @@
 !.config/zsh/.gitkeep
 !.config/zsh/yazi.zsh
 !.config/zsh/thefuck.zsh
+!.config/zsh/take.zsh
 
 # --- Neovim ---
 !.config/nvim/
