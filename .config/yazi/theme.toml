@@ -1,0 +1,135 @@
+# Ayu Dark theme for Yazi
+# Colors from official ayu-theme/ayu-colors repository
+# https://github.com/ayu-theme/ayu-colors
+
+# Official ayu-dark palette:
+# bg: #0B0E14, panel: #0F131A, line: #11151C
+# fg: #BFBDB6, ui fg: #565B66
+# accent: #E6B450 (gold)
+# tag: #39BAE6 (blue), entity: #59C2FF (light blue)
+# string: #AAD94C (green), added: #7FD962 (bright green)
+# markup: #F07178 (coral), removed: #F26D78 (red), error: #D95757
+# keyword: #FF8F40 (orange) - DIRECTORIES
+# func: #FFB454 (yellow-orange)
+# regexp: #95E6CB (cyan), constant: #D2A6FF (purple)
+
+[mgr]
+cwd = { fg = "#59C2FF" }
+hovered         = { reversed = true }
+preview_hovered = { underline = true }
+find_keyword  = { fg = "#E6B450", bold = true, italic = true, underline = true }
+find_position = { fg = "#D2A6FF", bg = "reset", bold = true, italic = true }
+marker_copied   = { fg = "#7FD962", bg = "#7FD962" }
+marker_cut      = { fg = "#F26D78", bg = "#F26D78" }
+marker_marked   = { fg = "#59C2FF", bg = "#59C2FF" }
+marker_selected = { fg = "#E6B450", bg = "#E6B450" }
+count_copied   = { fg = "#0B0E14", bg = "#7FD962" }
+count_cut      = { fg = "#0B0E14", bg = "#F26D78" }
+count_selected = { fg = "#0B0E14", bg = "#E6B450" }
+border_symbol = "│"
+border_style  = { fg = "#565B66" }
+
+[tabs]
+active   = { fg = "#0B0E14", bg = "#E6B450", bold = true }
+inactive = { fg = "#E6B450", bg = "#11151C" }
+
+[mode]
+normal_main = { fg = "#0B0E14", bg = "#E6B450", bold = true }
+normal_alt  = { fg = "#E6B450", bg = "#11151C" }
+select_main = { fg = "#0B0E14", bg = "#59C2FF", bold = true }
+select_alt  = { fg = "#59C2FF", bg = "#11151C" }
+unset_main = { fg = "#0B0E14", bg = "#F26D78", bold = true }
+unset_alt  = { fg = "#F26D78", bg = "#11151C" }
+
+[status]
+perm_sep   = { fg = "#565B66" }
+perm_type  = { fg = "#59C2FF" }
+perm_read  = { fg = "#E6B450" }
+perm_write = { fg = "#F26D78" }
+perm_exec  = { fg = "#7FD962" }
+progress_label  = { fg = "#BFBDB6", bold = true }
+progress_normal = { fg = "#7FD962", bg = "#11151C" }
+progress_error  = { fg = "#E6B450", bg = "#D95757" }
+
+[pick]
+border   = { fg = "#E6B450" }
+active   = { fg = "#D2A6FF", bold = true }
+inactive = {}
+
+[input]
+border   = { fg = "#E6B450" }
+title    = {}
+value    = {}
+selected = { reversed = true }
+
+[cmp]
+border = { fg = "#E6B450" }
+
+[tasks]
+border  = { fg = "#E6B450" }
+title   = {}
+hovered = { fg = "#D2A6FF", bold = true }
+
+[which]
+mask            = { bg = "#11151C" }
+cand            = { fg = "#59C2FF" }
+rest            = { fg = "#565B66" }
+desc            = { fg = "#D2A6FF" }
+separator       = "  "
+separator_style = { fg = "#565B66" }
+
+[help]
+on      = { fg = "#59C2FF" }
+run     = { fg = "#D2A6FF" }
+hovered = { reversed = true, bold = true }
+footer  = { fg = "#11151C", bg = "#BFBDB6" }
+
+[spot]
+border   = { fg = "#E6B450" }
+title    = { fg = "#E6B450" }
+tbl_col  = { fg = "#59C2FF" }
+tbl_cell = { fg = "#D2A6FF", bg = "#11151C" }
+
+[notify]
+title_info  = { fg = "#7FD962" }
+title_warn  = { fg = "#E6B450" }
+title_error = { fg = "#D95757" }
+
+[filetype]
+rules = [
+	{ name = "*.app/", fg = "#BFBDB6" },
+	{ name = "*.framework/", fg = "#BFBDB6" },
+	{ name = "*.bundle/", fg = "#BFBDB6" },
+	{ name = "*.sh", fg = "#39BAE6" },
+	{ name = "*.bash", fg = "#39BAE6" },
+	{ name = "*.zsh", fg = "#39BAE6" },
+	{ name = "*.fish", fg = "#FFB454" },
+	{ name = "*.py", fg = "#E6B450" },
+	{ name = "*.ps1", fg = "#F07178" },
+	{ name = "*.bat", fg = "#FFB454" },
+	{ name = "*.cmd", fg = "#FFB454" },
+	{ name = "*.md", fg = "#95E6CB" },
+	{ name = "*.yml", fg = "#59C2FF" },
+	{ name = "*.yaml", fg = "#59C2FF" },
+	{ name = "*.toml", fg = "#59C2FF" },
+	{ name = "*.json", fg = "#59C2FF" },
+	{ name = "*.ini", fg = "#59C2FF" },
+	{ name = "*.c", fg = "#39BAE6" },
+	{ name = "*.h", fg = "#39BAE6" },
+	{ name = "*.cpp", fg = "#39BAE6" },
+	{ name = "*.hpp", fg = "#39BAE6" },
+	{ name = "CMakeLists.txt", fg = "#AAD94C" },
+	{ name = "*.cmake", fg = "#AAD94C" },
+	{ name = "LICENSE*", fg = "#F07178" },
+	{ name = "COPYING*", fg = "#F07178" },
+	{ name = "*.properties", fg = "#BFBDB6" },
+	{ name = "Kconfig*", fg = "#BFBDB6" },
+	{ mime = "image/*", fg = "#95E6CB" },
+	{ mime = "{audio,video}/*", fg = "#FFB454" },
+	{ mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#F07178" },
+	{ mime = "application/{pdf,doc,rtf}", fg = "#AAD94C" },
+	{ name = "*", is = "exec", fg = "#7FD962" },
+	{ mime = "vfs/{absent,stale}", fg = "#565B66" },
+	{ name = "*", fg = "#BFBDB6" },
+	{ name = "*/", fg = "#FF8F40" },
+]

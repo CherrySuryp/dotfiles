@@ -9,8 +9,17 @@
 
 .config/*
 
+# --- Yazi ---
+!.config/yazi/
+.config/yazi/*
+!.config/yazi/theme.toml
+!.config/yazi/yazi.toml
+
 # --- Zsh ---
 !.config/zsh/
+.config/zsh/*
+!.config/zsh/.gitkeep
+!.config/zsh/yazi.zsh
 
 # --- Neovim ---
 !.config/nvim/
