@@ -23,6 +23,13 @@ return {
       opts.filesystem.filtered_items.hide_dotfiles = false
       opts.filesystem.filtered_items.visible = true
 
+      -- Always hide these directories (never_show ignores toggle visibility)
+      opts.filesystem.filtered_items.never_show = {
+        "__pycache__",
+        "node_modules",
+        ".mypy_cache",
+      }
+
       -- Disable auto-following the current file (useful in large monorepos)
       opts.filesystem.follow_current_file = { enabled = false }
 
