@@ -1,7 +1,14 @@
 return {
   "coder/claudecode.nvim",
   dependencies = { "folke/snacks.nvim" },
-  config = true,
+  opts = {
+    diff_opts = {
+      layout = "vertical",
+      vertical_split = true, -- Use vertical splits for diffs
+      open_in_current_tab = false, -- Don't create new tabs
+      keep_terminal_focus = true, -- Keep focus on Claude terminal
+    },
+  },
   keys = {
     { "<leader>a", nil, desc = "AI/Claude Code" },
     { "<C-b>", "<cmd>ClaudeCode<cr>", desc = "Toggle Claude" },
