@@ -31,6 +31,11 @@
 .config/iterm2/*
 !.config/iterm2/*.itermexport
 
+# --- Ghostty
+!.config/ghostty/
+.config/ghostty/*
+!.config/ghostty/config
+
 # --- Tmux ---
 !.config/tmux/
 .config/tmux/plugins/

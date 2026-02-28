@@ -1,0 +1,18 @@
+# appearance
+theme = Ayu 
+font-family = "JetBrainsMono Nerd Font"
+font-size = 14
+
+cursor-style = block
+cursor-style-blink = false
+cursor-invert-fg-bg = true
+
+mouse-hide-while-typing = true
+
+# auto update settings
+auto-update = download
+auto-update-channel = stable
+
+# macOS-specific settings
+macos-titlebar-style = tabs
+macos-option-as-alt = true
