@@ -8,6 +8,7 @@ Personal configuration files managed with GNU Stow.
 - **nvim** - Neovim editor settings
 - **tmux** - Terminal multiplexer configuration
 - **iterm2** - iTerm2 profile exports
+- **ghostty** - Ghostty terminal configuration
 
 ## Gitignore Rules
 
