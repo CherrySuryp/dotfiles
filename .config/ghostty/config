@@ -1,7 +1,9 @@
 # appearance
 theme = Ayu 
 font-family = "JetBrainsMono Nerd Font"
-font-size = 14
+font-size = 13
+
+font-feature = "-calt, -liga, -dlig"
 
 cursor-style = block
 cursor-style-blink = false
