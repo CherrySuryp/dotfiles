@@ -24,6 +24,7 @@
 !.config/zsh/take.zsh
 !.config/zsh/aliases.zsh
 !.config/zsh/cargo.zsh
+!.config/zsh/eza.zsh
 
 # --- Neovim ---
 !.config/nvim/
