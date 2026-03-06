@@ -1,0 +1,8 @@
+brew "nvim"
+brew "yazi"
+brew "eza"
+brew "thefuck"
+brew "go"
+brew "rust"
+brew "uv"
+brew "ty"
