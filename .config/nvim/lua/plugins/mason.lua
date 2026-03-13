@@ -9,7 +9,10 @@ return {
       ensure_installed = {
         -- install language servers
         "lua-language-server",
+
+        -- WARN: KEEP "basedpyright" COMMENTED OUT
         -- "basedpyright",
+
         "ty",
         "terraform-ls",
         "gopls",
