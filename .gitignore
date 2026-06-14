@@ -28,6 +28,7 @@
 
 # --- Neovim ---
 !.config/nvim/
+!.config/nvim-old/
 
 # --- iTerm2 ---
 !.config/iterm2/
