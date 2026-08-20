@@ -1,5 +1,7 @@
 # appearance
-theme = Ayu 
+theme = Everforest Dark Hard
+# match nvim's everforest (neanias) hard Normal background exactly
+background = #272e33
 font-family = "JetBrainsMono Nerd Font"
 font-size = 13
 
