@@ -37,45 +37,44 @@ return {
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
-      ty = {
-        cmd = { "ty", "server" },
-        filetypes = { "python" },
-        root_dir = function(bufnr, cb)
-          local root = vim.fs.root(bufnr, { "pyproject.toml", "ty.toml", ".git" })
-          if root then cb(root) end
-        end,
-      },
-      -- WARN: KEEP "basedpyright" COMMENTED OUT
-      --
-      -- basedpyright = {
-      --   settings = {
-      --     -- basedpyright = {
-      --     --   analysis = {
-      --     --     autoSearchPaths = true,
-      --     --     diagnosticMode = "openFilesOnly",
-      --     --     useLibraryCodeForTypes = true,
-      --     --     typeCheckingMode = "basic",
-      --     --     autoImportCompletions = true,
-      --     --     inlayHints = {
-      --     --       callArgumentNames = false,
-      --     --       functionReturnTypes = false,
-      --     --       genericTypes = false,
-      --     --       variableTypes = false,
-      --     --     },
-      --     --   },
-      --     -- },
-      --     python = {
-      --       pythonPath = ".venv/bin/python",
-      --     },
-      --   },
+      -- ty = {
+      --   cmd = { "ty", "server" },
+      --   filetypes = { "python" },
+      --   root_dir = function(bufnr, cb)
+      --     local root = vim.fs.root(bufnr, { "pyproject.toml", "ty.toml", ".git" })
+      --     if root then cb(root) end
+      --   end,
       -- },
+      -- WARN: KEEP "basedpyright" COMMENTED OUT
+      basedpyright = {
+        settings = {
+          -- basedpyright = {
+          --   analysis = {
+          --     autoSearchPaths = true,
+          --     diagnosticMode = "openFilesOnly",
+          --     useLibraryCodeForTypes = true,
+          --     typeCheckingMode = "basic",
+          --     autoImportCompletions = true,
+          --     inlayHints = {
+          --       callArgumentNames = false,
+          --       functionReturnTypes = false,
+          --       genericTypes = false,
+          --       variableTypes = false,
+          --     },
+          --   },
+          -- },
+          python = {
+            pythonPath = ".venv/bin/python",
+          },
+        },
+      },
     },
     -- customize how language servers are attached
     handlers = {
       -- use vim.lsp.config for ty since lspconfig doesn't have a built-in config
       ty = function(_, opts)
         vim.lsp.config("ty", opts)
-        vim.lsp.enable("ty")
+        vim.lsp.enable "ty"
       end,
     },
     -- Configure buffer local auto commands to add when attaching a language server
